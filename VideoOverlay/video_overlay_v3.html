@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+
+<script src="jquery_mostRecent.js"></script>  
+
+
+  	<div class="column_side" id='dragdiv1'>
+	
+	<button class="btn-minimize" style="font-size: 1.1vw;">Hide/Show Overlay</button>
+    
+	<div class="minimizeContent">
+
+		<div class="dragBar">
+			<div class="dragTitle">Click to select player and build:</div>
+			<div class="dropdown">
+			<button class="dropbtn"> Select Player</button>
+			<div class="dropdown-content">
+				<a id='Player1'></a>
+				<a id='Player2'></a>
+				<a id='Player3'></a>
+				<a id='Player4'></a>
+				<a id='Player5'></a>
+				<a id='Player6'></a>
+				<a id='Player7'></a>
+				<a id='Player8'></a>
+				<a id='Player9'></a>
+				<a id='Player10'></a>
+			</div>
+			</div>
+
+		</div>
+		
+		<table id="detail_table" class="detail">  
+
+			<tbody>  
+				<tr style="cursor:default" id="row1">  
+					<td colspan="4"> 
+						<div class="playerName" id="playerName"> </div>
+
+						<table style="table-layout: fixed">
+							<tr>
+								<td colspan="1">
+								<div> <img class="classIcon" id="classIcon"/> </div>
+								</td>
+								<td colspan="3">
+									<div class="classTitle" id="className"></div>
+								</td>
+							</tr>
+							
+							<tr>
+								<td colspan="4">
+									<div class="dragBar_Build">
+										<div class="dropdown">
+										<button class="dropbtn" style="font-size: .75vw;">Select Build</button>
+										<div class="dropdown-content">
+											<a id='Build1'>Build1</a>
+											<a id='Build2'>Build2</a>
+											<a id='Build3'>Build3</a>
+			
+										</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+
+						</table>
+					</td>			
+				</tr>
+				
+				<tr style="cursor:default">
+				
+					<td colspan="4">
+
+						<div class="buildDetail">
+
+						<div id="statLine1" class="descriptor" style="padding:2px">
+							<span id="stat_Agility"></span>
+							<span id="stat_Domination"></span>
+							<span id="stat_Crit"></span>
+							<span id="stat_Specialization"></span>
+							<span id="stat_Expertise"></span>
+							<span id="stat_Endurance"></span>
+						</div>  
+					
+					
+						<div class="LoadoutTitle">Click for more Details</div>
+
+						<div id='skillTable1'></div>
+
+						<!-- <div id='skillTable1' style="max-height:400px; overflow:auto; "> -->
+						</div>
+					</td>
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>			
+
+
+ 
+<!-- only externals allowed are the twitch extension library and the google analytics, all others must be in the zip file, cannot reference -->
+
+
+<script src="script_source.js"></script> 
+
+</body>
+
+</html>
+

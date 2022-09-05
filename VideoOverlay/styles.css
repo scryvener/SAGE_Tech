@@ -1,0 +1,309 @@
+body{
+	scrollbar-gutter: stable both-edges;
+	
+	margin:0px;/*needs to be 0 margin or twitch formatting will be messed up, will right shift everything and cutoff parts of it*/
+	padding:0;
+	overflow:hidden;
+	
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*scrollbar nonsense*/
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 4px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BF1FFF; 
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px grey; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #EEC2FF; 
+}
+/*scrollbar nonsense*/
+
+/*dropdown nonsense*/
+
+.dropbtn {
+  background-color: #317FAFd9;
+  color: white;
+  font-size: 1vw;
+  border: none;
+  border-radius:4px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:  #AFD2E9d9;}
+/*dropdown nonsense*/
+
+
+
+
+
+h1 {
+  color: rgb(82,118,217); 
+  /* border: 1px solid black; */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    grid-gap: 10px;
+}
+
+ .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+
+} 
+
+.flex-container > div{
+
+	text-align:center;
+}
+
+
+div.container{
+	display:table;
+	width:100%;
+  table-layout: fixed;
+
+}
+
+div.container span{
+	text-align:center;
+	display:table-cell;
+	
+	
+}
+
+div.dragBar{
+	border:1px solid black; 
+	padding:10px; 
+	cursor:default;
+	background-color:#1B2021
+	
+}
+
+div.dragTitle{
+	font-size:.8vw;
+	text-align:left;
+	color:#fff;
+	word-wrap: break-word;
+	
+	
+}
+
+div.dragBar_Build{
+	/* border:1px solid black;  */
+	padding:8px; 
+	cursor:default;
+	/* background-color: #30343Fd9; */
+	
+}
+
+div.skillTitle{
+	text-align:center;
+	color:#fff
+
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+table.detail{
+/*    border: .5px solid black; 
+  border-style: inset; */
+  word-wrap: break-word;
+  border-collapse:collapse;
+  margin:0;
+  
+}
+
+
+div.classTitle{
+	font-size:1.25vw;
+	text-align:left;
+	color:#fff;
+	word-wrap: break-word;
+	
+}
+
+div.playerName{
+	margin-left:5px;
+	font-size:2vw;
+	text-align:left;
+	color:#fff
+}
+
+div.LoadoutTitle{
+	font-size:.6vw;
+	text-align:center;
+	color:#fff
+}
+
+td.bio{
+	color:#fff;
+	padding: 2px;
+	font-size:1vw;
+	
+}
+
+table {
+ width: 100%;
+table-layout: fixed;
+/*border-collapse:collapse;*/
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+img.skillIcon {
+	max-height:75%;
+	max-width:75%;
+	float: none;
+	border-radius: 6px;
+	
+}
+
+.classIcon{
+	height:100%;
+	width:100%;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+img.tripIcon{
+	max-height:1.75vw;
+	max-width:1.75vw;
+  border-radius: 6px;
+/*   min-height:32px;
+  min-width:32px; */
+}
+
+
+.column_side {
+  float: left;
+  width: 15%; /*adjust based on stream overlay*/
+  position: absolute;
+  table-layout: fixed;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  border: 2px solid #a500e7;
+  background-color: #30343f;
+  max-height:90vh;
+  /* overflow:auto; */
+  /* overflow-x: hidden */
+  display:block;
+
+}
+
+div.minimizeContent{
+  
+  display: block;
+}
+
+div.buildDetail{
+  max-height:50vh;
+  overflow:auto;
+
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+tr.parent{
+	cursor:pointer;
+	
+	
+}
+
+
+table.skillListing{
+	opacity:.9;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  border: 1px solid #a500e7;
+  /* background-color: rgba(3, 3, 3, 0.8); */
+  background-color: #1B2021cd;
+	table-layout: fixed;
+
+}
+
+.hide,.hidden{
+	
+	display:none;
+}
+
+span.statLine{
+	display: inline-block;
+  padding: 1px;
+}
+
+span.skillTitle{
+	text-align:left;
+	color:#fff;
+	font-size:1.25vw;
+
+}
+
+.descriptor{
+	color:rgb(209, 209, 209);
+	font-size:.9vw;
+}
+
+.btn-minimize{
+  border-radius: 6px;
+}
