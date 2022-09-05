@@ -10,6 +10,7 @@ Created on Sun Nov 28 19:25:48 2021
 import requests
 import time
 import random
+import pickle
 
 skill_lists=[]
 id_list=['102','103','104','105','202','203','204','302','303','304','305','312','402','403','404','502','503','504','505','512']
@@ -26,7 +27,7 @@ for class_id in id_list:
     
     time.sleep(round(random.random()*1000))
 
-import pickle
+
 
 pickle.dump(skill_lists,open(r'K:\SkillData.pkl','wb'))
 
@@ -465,6 +466,7 @@ trip_df['icon']="LostArkIcons\\"+trip_df['icon']
 pickle.dump(trip_df,open('K:\TripodDescriptions.pkl','wb'))
 
 
-
+#%%
+if __name__ == "__main__":
 
     
